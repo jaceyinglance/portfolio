@@ -7,16 +7,16 @@ const Founders = () => {
     <section className="page-container" style={{ paddingTop: '120px' }}>
       <h2 className="page-title en-text fade-up-seq" style={{ animationDelay: '0.1s' }}>03. FOUNDERS</h2>
 
-      <div className="en-text fade-up-seq" style={{ fontSize: '2.5rem', fontWeight: 'bold', margin: '40px 0 60px 0', animationDelay: '0.3s' }}>
-        The Founders : Who Makes glance
+      <div className="founder-main-heading en-text fade-up-seq" style={{ animationDelay: '0.3s' }}>
+        The Founders : <br className="mobile-break" />Who Makes glance
       </div>
 
-      <div className="fade-up-seq" style={{ animationDelay: '0.5s', display: 'flex', gap: '80px', marginBottom: '120px', fontSize: '1.2rem', lineHeight: '1.6' }}>
-        <div style={{ flex: 1, fontWeight: 'bold' }}>
+      <div className="founder-intro-grid fade-up-seq" style={{ animationDelay: '0.5s' }}>
+        <div className="founder-intro-col">
           Two perspectives.<br/>
           One practice.
         </div>
-        <div style={{ flex: 1 }}>
+        <div className="founder-intro-col">
           두 개의 관점이<br/>
           하나로 흐르는 곳
         </div>

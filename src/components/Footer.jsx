@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer className="footer-section">
-      <div style={{ display: 'flex', gap: '40px', flex: 2 }}>
+      <div className="footer-left-container">
         <div className="footer-col kr-bold" style={{ maxWidth: '300px' }}>
           <p>
             A glance can be fleeting.<br/>

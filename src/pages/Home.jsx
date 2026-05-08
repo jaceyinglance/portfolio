@@ -21,11 +21,7 @@ const Home = () => {
     <section 
       className="hero"
       style={{
-        backgroundImage: `linear-gradient(rgba(227, 226, 221, 0.4), rgba(227, 226, 221, 0.4)), url(${eyeImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
-        backgroundRepeat: 'no-repeat'
+        backgroundImage: `linear-gradient(rgba(227, 226, 221, 0.4), rgba(227, 226, 221, 0.4)), url(${eyeImage})`
       }}
     >
       <div className="hero-slogan-1 kr-bold">

@@ -8,18 +8,10 @@ const Info = () => {
       <div style={{ display: 'flex', gap: '60px', marginTop: '40px', flexWrap: 'wrap' }}>
         {/* Left Column: Capabilities */}
         <div style={{ flex: 1, minWidth: '300px' }}>
-          <h3 className="en-text fade-up-seq" style={{ fontSize: '2.5rem', marginBottom: '24px', animationDelay: '0.3s' }}>
+          <h3 className="info-sub-heading en-text fade-up-seq" style={{ animationDelay: '0.3s' }}>
             Capabilities
           </h3>
-          <ul className="fade-up-seq" style={{ 
-            animationDelay: '0.5s', 
-            fontSize: '1.1rem', 
-            lineHeight: '1.4',
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            columnGap: '20px',
-            rowGap: '8px'
-          }}>
+          <ul className="info-capabilities-list fade-up-seq" style={{ animationDelay: '0.5s' }}>
             <li>Creative Direction</li>
             <li>Brand Identity Design</li>
             <li>Packaging Design</li>
@@ -33,9 +25,9 @@ const Info = () => {
 
         {/* Right Column: Description & Links */}
         <div style={{ flex: 1, minWidth: '300px' }}>
-          <div className="fade-up-seq" style={{ lineHeight: '1.8', marginBottom: '80px', animationDelay: '0.7s' }}>
-            <div className="kr-bold" style={{ marginBottom: '60px', fontSize: '1.2rem' }}>
-              <p style={{ fontSize: '1.5rem', marginBottom: '24px' }}>
+          <div className="info-body-container fade-up-seq" style={{ lineHeight: '1.8', marginBottom: '80px', animationDelay: '0.7s' }}>
+            <div className="kr-bold info-body-kr">
+              <p style={{ fontSize: '1.5em', marginBottom: '24px' }}>
                 Glance는 브랜드를 감각적인 경험으로 확장하는 독립 크리에이티브 하우스입니다.
               </p>
               <p style={{ marginBottom: '24px' }}>
@@ -50,8 +42,8 @@ const Info = () => {
               </p>
             </div>
             
-            <div className="kr-bold" style={{ fontSize: '1.2rem', color: '#666' }}>
-              <p style={{ fontSize: '1.5rem', marginBottom: '24px' }}>
+            <div className="kr-bold info-body-en" style={{ color: '#666' }}>
+              <p style={{ fontSize: '1.5em', marginBottom: '24px' }}>
                 Glance is an independent creative house shaping brands into experiences that move.
               </p>
               <p style={{ marginBottom: '24px' }}>
@@ -67,17 +59,17 @@ const Info = () => {
           </div>
 
           <div className="fade-up-seq" style={{ animationDelay: '0.9s' }}>
-            <h3 className="en-text" style={{ fontSize: '2.5rem', marginBottom: '24px' }}>
+            <h3 className="info-sub-heading en-text fade-up-seq">
               CONTACT US.
             </h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <a href="mailto:hello@glancecreativehouse.com" className="en-text" style={{ fontSize: '2rem', transition: 'color 0.3s' }} onMouseOver={(e) => e.target.style.color = '#888'} onMouseOut={(e) => e.target.style.color = 'inherit'}>
+              <a href="mailto:hello@glancecreativehouse.com" className="contact-link en-text" onMouseOver={(e) => e.target.style.color = '#888'} onMouseOut={(e) => e.target.style.color = 'inherit'}>
                 hello@glancecreativehouse.com
               </a>
-              <a href="https://www.instagram.com/glancecreativehouse" target="_blank" rel="noreferrer" className="en-text" style={{ fontSize: '2rem', transition: 'color 0.3s' }} onMouseOver={(e) => e.target.style.color = '#888'} onMouseOut={(e) => e.target.style.color = 'inherit'}>
+              <a href="https://www.instagram.com/glancecreativehouse" target="_blank" rel="noreferrer" className="contact-link en-text" onMouseOver={(e) => e.target.style.color = '#888'} onMouseOut={(e) => e.target.style.color = 'inherit'}>
                 Instagram
               </a>
-              <a href="https://www.youtube.com/@thedecemberlabel" target="_blank" rel="noreferrer" className="en-text" style={{ fontSize: '2rem', transition: 'color 0.3s' }} onMouseOver={(e) => e.target.style.color = '#888'} onMouseOut={(e) => e.target.style.color = 'inherit'}>
+              <a href="https://www.youtube.com/@thedecemberlabel" target="_blank" rel="noreferrer" className="contact-link en-text" onMouseOver={(e) => e.target.style.color = '#888'} onMouseOut={(e) => e.target.style.color = 'inherit'}>
                 Youtube
               </a>
             </div>
