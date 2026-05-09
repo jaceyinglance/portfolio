@@ -68,6 +68,16 @@ const ProjectDetail = () => {
           />
         ))}
       </div>
+
+      <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '60px' }}>
+        <button 
+          onClick={() => navigate(-1)} 
+          className="en-text"
+          style={{ fontSize: '1.2rem', cursor: 'pointer', borderBottom: '2px solid #000', paddingBottom: '4px' }}
+        >
+          ← BACK TO PRACTICE
+        </button>
+      </div>
     </section>
   );
 };

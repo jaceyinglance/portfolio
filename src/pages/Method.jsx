@@ -28,6 +28,9 @@ const Method = () => {
               Our Point of View<br/>
               : The Glance Method
             </p>
+            <p className="method-para" style={{ marginTop: '40px' }}>
+              Great stories do not spread by themselves.
+            </p>
             <p className="method-para">
               가치를 제대로 전하지 못하는 이유.<br/>
               가장 중요한 3 가지를<br/>
@@ -35,9 +38,6 @@ const Method = () => {
             </p>
             <p className="method-para kr-bold" style={{ fontSize: '1.5rem', marginTop: '40px' }}>
               본질 . 움직임 . 울림
-            </p>
-            <p className="method-para" style={{ marginTop: '40px' }}>
-              Great stories do not spread by themselves.
             </p>
           </div>
           
@@ -57,9 +57,9 @@ const Method = () => {
               <img src={imgEssence} alt="Essence" />
             </div>
             <div className="method-col-text">
-              <div className="method-item-subtitle">- Branding</div>
+              <div className="method-item-subtitle">Branding</div>
               <h3 className="method-item-title en-text">ESSENCE</h3>
-              <div className="method-item-desc">- 본질을 캐내어 다듬는 일.</div>
+              <div className="method-item-desc">— 본질을 캐내어 다듬는 일.</div>
               <p className="method-item-body">
                 왜 존재하는지, 어떤 생각을 하는지.<br/>
                 그만의 고유한 가치를 캐내어 날카롭게 다듬지않으면<br/>
@@ -83,7 +83,7 @@ const Method = () => {
               <img src={imgMovement} alt="Movement" />
             </div>
             <div className="method-col-text">
-              <div className="method-item-subtitle">- Marketing</div>
+              <div className="method-item-subtitle">Marketing</div>
               <h3 className="method-item-title en-text">MOVEMENT</h3>
               <div className="method-item-desc">— 움직임을 만들어내는 힘.</div>
               <p className="method-item-body">
@@ -107,9 +107,9 @@ const Method = () => {
               <img src={imgResonance} alt="Resonance" />
             </div>
             <div className="method-col-text">
-              <div className="method-item-subtitle">- Producing</div>
+              <div className="method-item-subtitle">Producing</div>
               <h3 className="method-item-title en-text">RESONANCE</h3>
-              <div className="method-item-desc">* 울림이 느껴질 때에, 비로소 남는 이야기.</div>
+              <div className="method-item-desc">— 울림이 느껴질 때에, 비로소 남는 이야기.</div>
               <p className="method-item-body">
                 마음으로 느껴지지 않는 이야기는 쉽게 소비되고 잊혀집니다.<br/>
                 좋은 이야기는 전달되는 것을 넘어 울림을 남겨야 합니다.<br/>
@@ -118,7 +118,8 @@ const Method = () => {
               <ul style={{ paddingLeft: '0', fontSize: '1.1rem', lineHeight: '2' }}>
                 <li>Film</li>
                 <li>Creative Direction</li>
-                <li>Editorial & Visual Systems<br/>Visual Storytelling</li>
+                <li>Editorial &amp; Visual Systems</li>
+                <li>Visual Storytelling</li>
               </ul>
             </div>
           </div>

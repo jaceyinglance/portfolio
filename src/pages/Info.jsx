@@ -28,7 +28,7 @@ const Info = () => {
           <div className="info-body-container fade-up-seq" style={{ lineHeight: '1.8', marginBottom: '80px', animationDelay: '0.7s' }}>
             <div className="kr-bold info-body-kr">
               <p style={{ fontSize: '1.5em', marginBottom: '24px' }}>
-                Glance는 브랜드를 감각적인 경험으로 확장하는 독립 크리에이티브 하우스입니다.
+                Glance는 브랜드를 감각적인 경험으로<span className="mobile-break" /> 확장하는 크리에이티브 하우스입니다.
               </p>
               <p style={{ marginBottom: '24px' }}>
                 브랜딩, 콘텐츠, 마케팅 전반을 아우르며<br/>
@@ -36,8 +36,8 @@ const Info = () => {
                 물리적 공간과 디지털 환경을 통해 이를 구현합니다.
               </p>
               <p>
-                브랜드 아이덴티티와 패키지부터 공간, 퍼포먼스 마케팅, 영상까지,<br/>
-                회사·기관·인플루언서와 협업하여<br/>
+                브랜딩과 패키지부터<span className="mobile-break" /> 영상, 콘텐츠, 공간, 퍼포먼스 마케팅까지—<br/>
+                인플루언서·회사·기관과 협업하여<br/>
                 공감되고, 성과로 이어지며, 오래 기억되는 결과를 만듭니다.
               </p>
             </div>

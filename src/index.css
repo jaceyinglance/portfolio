@@ -65,12 +65,21 @@ ul li::before {
   top: 0;
   left: 0;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   padding: 24px 40px;
   z-index: 100;
   background-color: transparent;
+}
+.gnb-left {
+  justify-self: start;
+}
+.gnb-center {
+  justify-self: center;
+}
+.gnb-right {
+  justify-self: end;
 }
 .gnb-btn {
   font-family: var(--font-en);
@@ -79,6 +88,26 @@ ul li::before {
   font-weight: 700;
   text-transform: uppercase;
   transition: color 0.3s ease, transform 0.3s ease;
+}
+/* On home page hero, GNB matches home menu size (desktop only) */
+.gnb-home .gnb-btn {
+  font-size: 1.5vw;
+}
+/* PC notice banner */
+.pc-notice {
+  position: fixed;
+  top: 72px;
+  left: 0;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  font-size: 11px;
+  font-family: var(--font-kr);
+  text-align: center;
+  padding: 4px 0;
+  z-index: 99;
+  letter-spacing: 0.05em;
+  display: none;
 }
 .gnb-btn:hover {
   color: #888;
@@ -112,6 +141,7 @@ ul li::before {
   font-weight: 700;
   letter-spacing: -0.02em;
   cursor: pointer;
+  white-space: nowrap;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 .menu-item:hover {
@@ -119,10 +149,16 @@ ul li::before {
   transform: translate(1px, -2px);
 }
 @keyframes floatSubtle { 0% { transform: translateY(0px); } 50% { transform: translateY(-8px); } 100% { transform: translateY(0px); } }
-.float-1 { top: 25%; left: 15%; animation: floatSubtle 4s ease-in-out infinite; }
-.float-2 { top: 45%; left: 60%; animation: floatSubtle 5s ease-in-out infinite reverse; }
-.float-3 { top: 65%; left: 25%; animation: floatSubtle 4.5s ease-in-out infinite; }
-.float-4 { top: 75%; left: 70%; animation: floatSubtle 6s ease-in-out infinite; }
+/* Menu overlay items */
+.float-1 { top: 22%; left: 12%; animation: floatSubtle 4s ease-in-out infinite; }
+.float-2 { top: 42%; left: 58%; animation: floatSubtle 5s ease-in-out infinite reverse; }
+.float-3 { top: 60%; left: 20%; animation: floatSubtle 4.5s ease-in-out infinite; }
+.float-4 { top: 78%; right: 8%; left: auto; animation: floatSubtle 6s ease-in-out infinite; }
+/* Home bottom menu items — independent floats */
+.home-float-1 { animation: floatSubtle 3s ease-in-out infinite; animation-delay: 0s; }
+.home-float-2 { animation: floatSubtle 3.7s ease-in-out infinite reverse; animation-delay: 0.5s; }
+.home-float-3 { animation: floatSubtle 4.2s ease-in-out infinite; animation-delay: 1s; }
+.home-float-4 { animation: floatSubtle 3.3s ease-in-out infinite reverse; animation-delay: 1.5s; }
 
 /* Main layout wrapper */
 .app-container {
@@ -611,10 +647,15 @@ main {
     display: block;
   }
 
-  /* Menu Overlay */
+  /* Menu Overlay — re-position items to avoid clipping on narrow screens */
   .menu-item {
-    font-size: 2.5rem;
+    font-size: 5.5vw;
+    white-space: nowrap;
   }
+  .float-1 { top: 20%; left: 5%; }
+  .float-2 { top: 38%; left: 35%; }
+  .float-3 { top: 56%; left: 5%; }
+  .float-4 { top: 74%; right: 5%; left: auto; }
 
   /* Footer */
   .footer-section {
@@ -636,41 +677,60 @@ main {
     margin-top: 20px;
   }
 
+  /* Mobile: show PC notice */
+  .pc-notice {
+    display: block;
+  }
+
+  /* Mobile: keep GNB at normal size even on home */
+  .gnb-home .gnb-btn {
+    font-size: 14px;
+  }
+
   /* Hero Section */
   .hero {
-    background-position: 85% center;
+    background-position: 50% 40%;
   }
   .hero-logo-container {
     width: 80vw;
   }
   .hero-slogan-1, .hero-slogan-1-kr {
-    font-size: 0.9rem;
-    max-width: 250px;
+    font-size: 0.85rem;
+    max-width: 220px;
   }
-  .hero-slogan-1 { top: 15%; left: 20px; }
-  .hero-slogan-1-kr { top: 30%; left: 20px; }
-  
+  /* Reduce gap between EN and KR slogans by ~half */
+  .hero-slogan-1 { top: 13%; left: 20px; }
+  .hero-slogan-1-kr { top: 24%; left: 20px; }
+
   .hero-slogan-2-container {
-    font-size: 0.9rem;
-    bottom: 25%;
+    font-size: 0.85rem;
+    bottom: 28%;
     right: 20px;
   }
   .hero-slogan-2-text {
-    width: 250px;
+    width: 230px;
     height: 45px;
   }
-  
+
+  /* Home bottom menu — staggered diagonal, each item independent */
   .home-menu-container {
-    bottom: 5%;
-    padding: 0 10px;
-    flex-wrap: wrap;
+    bottom: 4%;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 24px 0;
     height: auto;
-    gap: 12px;
+    width: 100%;
   }
+  /* Stagger items diagonally so no two are on the same X or Y axis */
+  .home-menu-item:nth-child(1) { text-align: left;   padding-left: 0;   }
+  .home-menu-item:nth-child(2) { text-align: center; padding-top: 14px; }
+  .home-menu-item:nth-child(3) { text-align: left;   padding-left: 30px; }
+  .home-menu-item:nth-child(4) { text-align: right;  padding-top: 14px; padding-right: 0; }
   .home-menu-item {
-    font-size: 0.8rem;
-    flex-basis: 40%;
-    text-align: center;
+    font-size: 1rem;
+    white-space: nowrap;
   }
 
   /* Method Layout */

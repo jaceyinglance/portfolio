@@ -8,7 +8,6 @@ const Home = () => {
 
   useEffect(() => {
     const handleMouseMove = (e) => {
-      // More visible movement tracking
       const x = (e.clientX / window.innerWidth - 0.5) * 80;
       const y = (e.clientY / window.innerHeight - 0.5) * 80;
       setMousePos({ x, y });
@@ -59,10 +58,10 @@ const Home = () => {
       </div>
 
       <div className="home-menu-container">
-        <Link to="/method" className="home-menu-item">01. METHOD</Link>
-        <Link to="/practice" className="home-menu-item">02. PRACTICE</Link>
-        <Link to="/founders" className="home-menu-item">03. FOUNDERS</Link>
-        <Link to="/info" className="home-menu-item">04. INFORMATION</Link>
+        <Link to="/method" className="home-menu-item home-float-1">01. METHOD</Link>
+        <Link to="/practice" className="home-menu-item home-float-2">02. PRACTICE</Link>
+        <Link to="/founders" className="home-menu-item home-float-3">03. FOUNDERS</Link>
+        <Link to="/info" className="home-menu-item home-float-4">04. INFORMATION</Link>
       </div>
     </section>
   );

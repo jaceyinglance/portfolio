@@ -1,23 +1,28 @@
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 const Gnb = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+  const isHome = location.pathname === '/';
 
   return (
     <>
-      <nav className="gnb">
+      <nav className={`gnb ${isHome ? 'gnb-home' : ''}`}>
         <div className="gnb-left">
-          <Link to="/" className="gnb-btn">00. COVER (Home)</Link>
+          <Link to="/" className="gnb-btn">COVER</Link>
         </div>
         <div className="gnb-center" onMouseEnter={() => setMenuOpen(true)}>
           <button className="gnb-btn menu-btn">MENU</button>
         </div>
         <div className="gnb-right">
-          <button className="gnb-btn" onClick={() => navigate(-1)}>Back</button>
+          <button className="gnb-btn" onClick={() => navigate(-1)}>← BACK</button>
         </div>
       </nav>
+
+      {/* PC optimization notice — mobile only */}
+      <div className="pc-notice">* 본 사이트는 PC환경에 최적화 되었습니다</div>
 
       {/* Menu Overlay */}
       <div className={`menu-overlay ${menuOpen ? 'active' : ''}`} onMouseLeave={() => setMenuOpen(false)}>

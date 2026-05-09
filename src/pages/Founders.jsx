@@ -104,7 +104,7 @@ const Founders = () => {
         </div>
       </div>
 
-      <div className="founder-footer fade-up-seq" style={{ animationDelay: '1.1s', marginBottom: '80px' }}>
+      <div className="founder-footer fade-up-seq" style={{ animationDelay: '1.1s', marginBottom: '80px', marginTop: '200px' }}>
         glance는 전략과 창작이 만나는 접점에서 작업하는 크리에이티브 하우스입니다.<br/>
         우리는 감각과 구조가 만나 세계를 확장한다고 믿습니다.<br/><br/>
         <span className="en-text" style={{ fontWeight: 'bold' }}>Two ways of seeing. One shared practice.</span>
