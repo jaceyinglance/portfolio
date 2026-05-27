@@ -1,0 +1,16 @@
+[CREDIT]
+Client : Hanwha Corporation
+Director : Cie Juyeon Shon
+Release : 26 Jan 2026
+Location : Seoul, Korea
+
+[ABOUT_KR]
+Nidhi Agrawal 의 삶과 도전을 따라간 휴먼 다큐멘터리.
+한국에서 자신만의 길을 만들어가고 있는 그녀의 일상과 인터뷰를 통해, 낯선 환경 속에서도 스스로의 가능성을 믿으며 앞으로 나아가는 시간을 기록했다.
+
+[ABOUT_EN]
+A human documentary following Nidhi Agrawal and her journey of building a life in Korea.
+Through interviews and observational moments from her daily life, the film explores her persistence, curiosity, and willingness to continue forward in an unfamiliar environment.
+The project focuses on the process of shaping identity and finding Director between different cultures and experiences.
+
+[LINK]

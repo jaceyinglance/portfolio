@@ -1,0 +1,19 @@
+[CREDIT]
+Brand : Twosome Place
+Industry : F&B
+Director : Jacey Song
+Project Type : Brand Promotion Campaign
+Client : Spec Project
+AI Tech Stack : Midjourney, Higgsfield, Veo 3, ComfyUI, Suno v4, Adobe Premiere Pro
+Launch : 2025. 12
+
+[ABOUT_KR]
+겨울에만 만날 수 있는 '제철 생딸기' 시즈널 제품. 본 프로젝트는 이 시즌을 기다려온 마음을 ‘겨울로 부터 받은 반가운 편지’ 라는 서사로 풀어낸 브랜드 프로모션 제안(Spec Work)이다. 홀리데이 시즌을 겨냥하여 겨울이라는 계절감 자체를 매혹적인 시각적 메타포로 치환, 제품이 가진 계절적 희소성과 미각적 판타지를 극대화하며 설레는 감정을 전달하는 데 목적을 두었다.
+브랜드 메시지 수립부터 대본 기획, 캐릭터 빌딩, 음악 큐레이션까지 전 과정을 총괄 디렉팅했으며, 특히 세트 규모와 기상 상황 등 물리적 한계에 구애받지 않는 AI 기술의 강점을 적극 활용했다. 이를 통해 폭설이 내리는 실외 전경과 대비되는 따뜻하고 감각적인 실내 미장센을 자유롭게 넘나들며 연출. 영상의 몰입감을 높이기 위한 매력적인 페르소나의 모델 플레이, 깊이감 있는 공간감, 정교한 로케이션 미술 콘셉트의 컨트롤에 집중할 수 있었다.
+
+[ABOUT_EN]
+This project is a brand promotion speculative proposal (Spec Work) for A Twosome Place’s seasonal product, highlighting the "seasonal fresh strawberries" that can only be experienced during winter. The narrative translates the anticipation of waiting for this specific season into a heart-fluttering story: "A Welcoming Letter Received from Winter." Aimed at the holiday season, the project sublimates the essence of winter into a mesmerizing visual metaphor, maximizing the product's seasonal scarcity and gastronomic fantasy to convey a sense of excitement.
+I served as the executive creative director for the entire process—from establishing the brand message to script-writing, character building, and music curation. In particular, I actively leveraged the strengths of AI technology, which allowed for absolute creative freedom independent of physical constraints such as set scale or weather conditions. This enabled a seamless visual transition between the heavy snow outdoors and the warm, cinematic mise-en-scène indoors. By bypassing logistical limitations, I was able to fully focus on controlling the fine details: directing a model with a compelling persona, crafting a deep sense of spatiality, and orchestrating a sophisticated location art concept to enhance the immersive quality of the video.
+
+[LINK]
+Https://youtu.be/r10UHx7l_Q0?si=Sr8oej32RQ5hte7k

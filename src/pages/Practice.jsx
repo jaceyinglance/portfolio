@@ -20,12 +20,13 @@ const Practice = () => {
         projectMap[cleanTitle] = {
           id: cleanTitle,
           title: cleanTitle,
+          originalDir: projectDir,
           images: []
         };
       }
       projectMap[cleanTitle].images.push({ url: module.default, name: filename });
     }
-    return Object.values(projectMap).sort((a, b) => a.title.localeCompare(b.title));
+    return Object.values(projectMap).sort((a, b) => a.originalDir.localeCompare(b.originalDir));
   }, []);
 
   const beliefParagraphs = [
