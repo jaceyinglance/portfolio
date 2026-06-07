@@ -53,8 +53,28 @@ const getYouTubeId = (url) => {
 
 const getSeoAltText = (project, index, isRepresentative = false) => {
   const brandingKeywords = ["브랜드 디자인", "브랜딩", "디자인", "패키지 디자인", "푸드 브랜딩", "F&B브랜딩"];
-  const filmKeywords = ["영상 스튜디오", "AI 영상", "AI 화보", "콘텐츠 마케팅", "인스타 대행"];
-  const fallbackKeywords = ["glance", "글랜스 스튜디오", "글랜스 디자인", "glance creative house"];
+  const filmKeywords = [
+    "글랜스 영상 제작",
+    "글랜스 영상 촬영",
+    "글랜스 유튜브 제작",
+    "글랜스 유튜브 콘텐츠",
+    "글랜스 유튜브 촬영",
+    "유튜브 촬영",
+    "다큐 촬영",
+    "다큐 제작",
+    "다큐 제작사",
+    "브랜드 영상 촬영",
+    "아트 필름 촬영",
+    "패션 룩북 촬영"
+  ];
+  const fallbackKeywords = [
+    "glance",
+    "글랜스 스튜디오",
+    "글랜스 디자인",
+    "glance creative house",
+    "글랜스 크리에이티브 하우스",
+    "글랜스크리에이티브하우스"
+  ];
 
   const category = project?.category || '';
   let keywords = fallbackKeywords;
