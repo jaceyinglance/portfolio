@@ -16,6 +16,30 @@ const Home = () => {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
+  const origin = typeof window !== 'undefined' ? window.location.origin : 'https://glance.house';
+  const jsonLdData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "glance creative house",
+    "alternateName": ["glance", "글랜스", "글랜스 스튜디오", "글랜스 디자인"],
+    "url": origin,
+    "logo": `${origin}/glance_LOGO_img.png`,
+    "description": "글랜스 스튜디오(glance creative house)는 브랜드 디자인, 브랜딩, 디자인 전문 에이전시입니다. F&B브랜딩(푸드 브랜딩) 및 패키지 디자인부터 영상 스튜디오로서 AI 화보, AI 영상 제작, 인스타 대행, 콘텐츠 마케팅까지 토탈 브랜딩 솔루션을 제공합니다.",
+    "knowsAbout": [
+      "브랜드 디자인",
+      "브랜딩",
+      "디자인",
+      "푸드 브랜딩",
+      "F&B브랜딩",
+      "패키지 디자인",
+      "영상 스튜디오",
+      "인스타 대행",
+      "콘텐츠 마케팅",
+      "AI 화보",
+      "AI 영상"
+    ]
+  };
+
   return (
     <section 
       className="hero"
@@ -23,6 +47,9 @@ const Home = () => {
         backgroundImage: `linear-gradient(rgba(227, 226, 221, 0.4), rgba(227, 226, 221, 0.4)), url(${eyeImage})`
       }}
     >
+      <script type="application/ld+json">
+        {JSON.stringify(jsonLdData)}
+      </script>
       <div className="hero-slogan-1 kr-bold">
         We find essence.<br/>
         We create movement.<br/>

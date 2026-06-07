@@ -51,6 +51,28 @@ const getYouTubeId = (url) => {
   return (match && match[2].length === 11) ? match[2] : null;
 };
 
+const getSeoAltText = (project, index, isRepresentative = false) => {
+  const brandingKeywords = ["브랜드 디자인", "브랜딩", "디자인", "패키지 디자인", "푸드 브랜딩", "F&B브랜딩"];
+  const filmKeywords = ["영상 스튜디오", "AI 영상", "AI 화보", "콘텐츠 마케팅", "인스타 대행"];
+  const fallbackKeywords = ["glance", "글랜스 스튜디오", "글랜스 디자인", "glance creative house"];
+
+  const category = project?.category || '';
+  let keywords = fallbackKeywords;
+  
+  if (category === 'Branding') {
+    keywords = brandingKeywords;
+  } else if (category === 'Film') {
+    keywords = filmKeywords;
+  }
+
+  const keyword = keywords[index % keywords.length];
+  
+  if (isRepresentative) {
+    return `${project.title} 대표 이미지 - ${keyword} | glance`;
+  }
+  return `${project.title} 프로젝트 이미지 ${index + 1} - ${keyword} | glance`;
+};
+
 const ProjectDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -79,13 +101,15 @@ const ProjectDetail = () => {
       
       if (projectDir === '02_Selected_Practice' || filename.startsWith('.')) continue;
 
+      const category = parts[parts.length - 1];
       const cleanTitle = projectDir.replace(/^\d+\.\s*/, '');
 
       if (!projectMap[cleanTitle]) {
         projectMap[cleanTitle] = {
           title: cleanTitle,
           images: [],
-          description: null
+          description: null,
+          category: category
         };
       }
       projectMap[cleanTitle].images.push({ url: module.default, name: filename });
@@ -272,7 +296,7 @@ const ProjectDetail = () => {
               ) : representativeImage ? (
                 <img 
                   src={representativeImage.url} 
-                  alt={`${project.title} - Representative`} 
+                  alt={getSeoAltText(project, 0, true)} 
                 />
               ) : null}
             </div>
@@ -332,7 +356,7 @@ const ProjectDetail = () => {
             >
               <img 
                 src={img.url} 
-                alt={`${project.title} - ${idx + 1}`} 
+                alt={getSeoAltText(project, idx)} 
                 onLoad={(e) => handleImageLoad(img.url, e)}
                 style={{ width: '100%', height: 'auto', display: 'block' }} 
               />

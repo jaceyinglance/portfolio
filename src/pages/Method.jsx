@@ -42,7 +42,7 @@ const Method = () => {
           </div>
           
           <div className="method-top-right">
-            <img src={img0} alt="Method Intro" className="method-top-img" />
+            <img src={img0} alt="글랜스 스튜디오(glance creative house)의 브랜드 디자인 및 브랜딩 메소드 소개" className="method-top-img" />
           </div>
         </div>
 
@@ -54,7 +54,7 @@ const Method = () => {
         <FadeSection>
           <div className="method-row">
             <div className="method-col-img">
-              <img src={imgEssence} alt="Essence" />
+              <img src={imgEssence} alt="글랜스 크리에이티브 하우스의 Essence - 푸드 브랜딩, F&B브랜딩 및 패키지 디자인 본질 발견" />
             </div>
             <div className="method-col-text">
               <div className="method-item-subtitle">Branding</div>
@@ -80,7 +80,7 @@ const Method = () => {
         <FadeSection>
           <div className="method-row">
             <div className="method-col-img">
-              <img src={imgMovement} alt="Movement" />
+              <img src={imgMovement} alt="글랜스 디자인의 Movement - 콘텐츠 마케팅, 인스타 대행을 통한 브랜드의 움직임 극대화" />
             </div>
             <div className="method-col-text">
               <div className="method-item-subtitle">Marketing</div>
@@ -104,7 +104,7 @@ const Method = () => {
         <FadeSection>
           <div className="method-row">
             <div className="method-col-img">
-              <img src={imgResonance} alt="Resonance" />
+              <img src={imgResonance} alt="영상 스튜디오 glance의 Resonance - AI 화보, AI 영상 제작 및 비주얼 스토리텔링의 울림" />
             </div>
             <div className="method-col-text">
               <div className="method-item-subtitle">Producing</div>
